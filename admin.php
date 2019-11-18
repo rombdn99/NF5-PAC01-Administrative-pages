@@ -24,7 +24,7 @@ mysqli_query($db,$insert3) or die (mysqli_error($db));
 	<body>
 		<table>
 			<tr>
-				<th colspan="2">Videojuegos <a href="movie.php?action=add">[ADD]</a></th>
+				<th colspan="2">Videojuegos <a href="videojuegos.php?action=add">[ADD]</a></th>
 			</tr>
 			<?php
 				$query = 'SELECT * FROM videojuego';
@@ -37,7 +37,7 @@ mysqli_query($db,$insert3) or die (mysqli_error($db));
 					echo '<td>';
 					echo $row['videojuego_nombre'];
 					echo '</td><td>';
-					echo ' <a href="movie.php?action=edit&id=' . $row['videojuego_id'] . '"> [EDIT]</a>';
+					echo ' <a href="videojuegos.php?action=edit&id=' . $row['videojuego_id'] . '"> [EDIT]</a>';
 					echo ' <a href="delete.php?type=videojuego&id=' . $row['videojuego_id'] . '"> [DELETE]</a>';
 					echo '</td></tr>';
 				}
