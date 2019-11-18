@@ -18,7 +18,7 @@ mysqli_query($db,$insert3) or die (mysqli_error($db));
 ?>
 <html> 
 	<head>
-		<title>Movie database</title>
+		<title>Videojuego database</title>
 		
 	</head>
 	<body>
